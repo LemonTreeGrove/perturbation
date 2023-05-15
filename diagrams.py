@@ -39,10 +39,22 @@ class  Perturbate:
                 return True
         return False
       
-    def find_tree_level(self):
-        pass
+    def find_tree_level_vertices_2x2(self):
+        result = []
+        if self.check_vertex_current_compatibility(0, 1):
+            if self.check_vertex_current_compatibility(2, 3):
+                result.append(((0, 1),(2, 3)))
+        if self.check_vertex_current_compatibility(0, 1):
+            if self.check_vertex_current_compatibility(2, 3):
+                result.append(((0, 2),(1, 3)))
+        if self.check_vertex_current_compatibility(0, 1):
+            if self.check_vertex_current_compatibility(2, 3):
+                result.append(((0, 3),(1, 3)))
+        return result
         
-        
+         
+lemons = Perturbate(pp.bhabha)     
+print(lemons.find_tree_level_vertices_2x2())
         
         
         
