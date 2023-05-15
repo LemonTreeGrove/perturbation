@@ -1,3 +1,6 @@
+me = 1  # electron_mass
+
+
 class Photon:
     def __init__(self, conjugate, index, momentum):
         self.photon = True
@@ -48,4 +51,7 @@ class PhotonPropagator:
         
     def generate_string(self):
         return "D_{ " + self.index[0] + " " + self.index[1] + " } \left( " + self.momentum + " \right)"}
+        
+  
+bhabha = [Fermion(False, True, me, 'P_{1}'), Fermion(True, False, me, 'P_{2}'), Fermion(True, True, me, 'P_{3}'), Fermion(False, False, me, 'P_{4}')]
         
