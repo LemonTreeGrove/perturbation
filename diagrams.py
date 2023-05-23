@@ -2,8 +2,12 @@ import particles as pp
 
                   
 class Diagram:
-    def __init__(self):
-        pass
+    def __init__(self, incount, out_count, particles, vertices):
+        self.in_count = incount
+        self.out_count = out_count
+        self.particles = particles
+        self.virtices = veritices
+        
 
       
 class Perturbate:
